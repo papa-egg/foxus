@@ -1,0 +1,33 @@
+@import "reset.css";
+
+.loading{
+    background: url("../images/load-bg.jpg") repeat-y;
+    background-size: 100% auto;
+    min-height: 100vh;
+}
+.loading-logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width: 2.16rem;
+    height: 3rem;
+    opacity: 0;
+    background: url("../images/load-logo.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.load-ani{
+    animation: 2s opacity;
+}
+
+@keyframes opacity{
+    0%{opacity:0}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+@-webkit-keyframes opacity{
+    0%{opacity:0}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
